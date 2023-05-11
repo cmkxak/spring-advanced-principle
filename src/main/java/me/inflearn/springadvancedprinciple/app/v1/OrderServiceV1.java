@@ -1,6 +1,7 @@
 package me.inflearn.springadvancedprinciple.app.v1;
 
 import lombok.RequiredArgsConstructor;
+import me.inflearn.springadvancedprinciple.trace.TraceId;
 import me.inflearn.springadvancedprinciple.trace.TraceStatus;
 import me.inflearn.springadvancedprinciple.trace.hellotrace.HelloTraceV1;
 import org.springframework.stereotype.Service;
