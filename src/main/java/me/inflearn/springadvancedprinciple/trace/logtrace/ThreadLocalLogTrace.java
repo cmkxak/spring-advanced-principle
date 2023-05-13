@@ -11,7 +11,7 @@ public class ThreadLocalLogTrace implements LogTrace {
     private static final String COMPLETION_PREFIX = "<--";
     private static final String EXCEPTION_PREFIX = "<x-";
 
-    private ThreadLocal<TraceId> traceIdHolder = new ThreadLocal<>(); //traceId 동기화, 동시성 이슈 발생!
+    private ThreadLocal<TraceId> traceIdHolder = new ThreadLocal<>();
 
     @Override
     public TraceStatus begin(String message) {
