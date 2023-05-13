@@ -1,7 +1,7 @@
 package me.inflearn.springadvancedprinciple;
 
-import me.inflearn.springadvancedprinciple.trace.logtrace.FieldlogTrace;
 import me.inflearn.springadvancedprinciple.trace.logtrace.LogTrace;
+import me.inflearn.springadvancedprinciple.trace.logtrace.ThreadLocalLogTrace;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -10,6 +10,6 @@ public class LogTraceConfig {
 
     @Bean
     public LogTrace logTrace() {
-        return new FieldlogTrace();
+        return new ThreadLocalLogTrace();
     }
 }
